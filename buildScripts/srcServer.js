@@ -13,9 +13,15 @@ router.get('/',function(req,res){
 router.get('/recipes.html',function(req,req){
     req.sendFile(path.join(__dirname,"../src/recipes.html"));
 });
+
 router.get('/nutrition.html',function(req,res){
     res.sendFile(path.join(__dirname,'../src/nutrition.html'));
 });
+router.get('/',function(req,res){
+    res.sendFile(path.join(__dirname,'../src/wired-brain-coffee-logo.png'));
+});
+app.use(express.static('src'));
+
 app.use("/",router);
 
 app.listen(port,function(err){
