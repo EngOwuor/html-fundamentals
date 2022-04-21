@@ -6,6 +6,20 @@
         <meta name="viewport" content="width='device-width',initial-scale=1">
         <title>Hot Cocoa Recipe</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script>
+            function toggleTable1(){
+                button1 = document.getElementById("button1");
+                table1 = document.getElementById("table1");
+                if (button1.textContent === "see nutrio info"){
+                    button1.textContent = 'hide nutrio info';
+                    table1.style.display = "block";
+                }else{
+                    button1.textContent = 'see nutrio info';
+                    table1.style.display = 'none'
+                }
+
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -41,6 +55,57 @@
                     <li>Stir until mix is fully dissolved in the milk.</li>
                     <li>Top with marshmallows if you must.</li>
                 </ol>
+                <div>
+                    <button id="button1" onclick="toggleTable1()">see nutrio info</button>
+                    <table id="table1" style="display: none;">
+                        <caption>Wired brain coffee nutritional information</caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Serving Size</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th colspan="2">carbohydrates</th>
+                            </tr>
+                            <tr>
+                                <th>Calories</th>
+                                <th>Fat (g)</th>
+                                <th>Protein</th>
+                                <th>sugar</th>
+                                <th>Fiber</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8 oz</td>
+                                <td>250</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>25</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>8 oz</td>
+                                <td>250</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>25</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>max</td>
+                                <td>250</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>30</td>
+                                <td>0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
            </div>
            <div id="brownies">
                <h1>Brownie Recipe</h1>
@@ -58,7 +123,60 @@
                    <li>Stir until mix is fully dissolved in the milk.</li>
                    <li>Top with marshmallows if you must.</li>
                </ol>
-           </div>
+               <div>
+                   <button id="button2">see nutrio info</button>
+                <table id="table2">
+                    <caption>Wired brain coffee nutritional information</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Serving Size</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="2">carbohydrates</th>
+                        </tr>
+                        <tr>
+                            <th>Calories</th>
+                            <th>Fat (g)</th>
+                            <th>Protein</th>
+                            <th>sugar</th>
+                            <th>Fiber</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8 oz</td>
+                            <td>250</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>25</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>8 oz</td>
+                            <td>250</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>25</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>max</td>
+                            <td>250</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>30</td>
+                            <td>0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+               </div>
+                
+
+               
+            </div>
         </article>
         <section title="Interesting facts about cocoa">
             <h4>Cocoa Facts</h4>
